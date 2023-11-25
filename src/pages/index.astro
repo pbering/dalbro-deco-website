@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Work from "../components/Work.astro";
+---
+
+<Layout
+  title="Dalbro Deco"
+  description="Velkommen til Dalbro Deco, dekoratør, visual merchandising, boligstyling, indretningskonsultation, fotostyling"
+>
+  <main>
+    <div class="hero">
+      <img
+        src="/images/logo-medium.png"
+        width="70%"
+        height="70%"
+        alt="Dalbro Deco logo"
+      />
+    </div>
+    <p class="instructions">
+      <strong>kontakt</strong> mig for: <code>Dekoratør opgaver</code>, <code
+        >visual merchandising</code
+      >,
+      <code>boligstyling</code>, <code>indretningskonsultation</code> samt <code
+        >fotostyling</code
+      >.
+    </p>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="https://instagram.com/dalbro_deco/"
+        title="Instagram"
+        body="instagram.com/dalbro_deco"
+      />
+      <Card
+        href="https://linkedin.com/in/katrine-dalbro/"
+        title="LinkedIn"
+        body="linkedin.com/in/katrine-dalbro"
+      />
+      <Card
+        href="mailto:dalbro.deco@gmail.com"
+        title="Send mig en mail"
+        body="dalbro.deco@gmail.com"
+      />
+      <Card href="tel:+4561271858" title="Ring" body="+45 61 27 18 58" />
+      <Work image="/images/work1.jpg" alt="" />
+      <Work image="/images/work2.jpg" alt="" />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .hero {
+    text-align: center;
+  }
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>

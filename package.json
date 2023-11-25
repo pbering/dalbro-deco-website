@@ -1,0 +1,21 @@
+{
+  "name": "astro3-minimal",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.6.0"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
