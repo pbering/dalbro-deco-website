@@ -12,7 +12,6 @@ permissions:
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
@@ -22,7 +21,6 @@ jobs:
         uses: withastro/action@v1
 
   deploy:
-    name: Deploy
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -32,3 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        with:
+         path: .
