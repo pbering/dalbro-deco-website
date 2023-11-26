@@ -17,6 +17,10 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <slot />
+    <footer>
+      © Dalbro-Deco | CVR ******* | <a href="/handelsbetingelser"
+        >Handelsbetingelser</a>
+    </footer>
   </body>
 </html>
 <style is:global>
@@ -35,6 +39,17 @@ const { title, description } = Astro.props;
     font-family: system-ui, sans-serif;
     background: #806060;
     background-size: 224px;
+  }
+  footer {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    line-height: 1.6;
+  }
+
+  footer a {
+    color: white;
   }
   code {
     font-family:
