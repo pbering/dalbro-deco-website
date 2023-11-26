@@ -18,3 +18,7 @@ All commands are run from the root of the project, from a terminal:
 ## TODO's
 
 - use <https://docs.astro.build/en/guides/images/> instead of "public" images
+- redirects:
+  - www.dalbro-deco.dk -> dalbro-deco.dk
+    www.dalbrodeco.dk -> dalbro-deco.dk
+    dalbrodeco.dk -> dalbro-deco.dk
